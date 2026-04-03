@@ -32,6 +32,8 @@ function openFullscreen(images, index) {
 
   const imgs = [...images]; 
 
+  document.body.style.overflow = 'hidden'; 
+
   const container = document.createElement('div');
   container.className = 'fullscreen';
 
@@ -64,7 +66,10 @@ function openFullscreen(images, index) {
     update();
   };
 
-  close.onclick = () => container.remove();
+  close.onclick = () => {
+    container.remove();
+    document.body.style.overflow = ''; 
+  };
 
   update();
   container.append(img, close, prev, next);

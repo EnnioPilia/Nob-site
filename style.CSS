@@ -18,13 +18,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px; 
+  height: 60px;
   border-bottom: 1px solid white;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0); 
+  background: rgba(255, 255, 255, 0);
   transition: background 0.3s ease;
-  z-index: 5; /* 👈 plus bas */
-
+  z-index: 5;
 }
 
 .container {
@@ -34,13 +33,12 @@ body {
 
 .hero {
   height: 100vh;
-  min-height: 100vh; /* sécurité */
+  min-height: 100vh;
   background: black;
   color: white;
-  position: sticky; /* 👈 LA CLÉ */
+  position: sticky;
   top: 0;
   z-index: 1;
-  
 }
 
 .logo {
@@ -54,33 +52,30 @@ body {
   font-weight: 200;
 }
 
-.logo h2{
+.logo h2 {
   font-size: clamp(1.5rem, 3vw, 2.3rem);
   font-weight: 100;
-   position: relative;
-   font-style: italic;
-  left: 55px;   /* 👉 décale à droite */
-  top: -27px;   /* 👉 monte un peu */
+  position: relative;
+  font-style: italic;
+  left: 55px;
+  top: -27px;
 }
+
 .logo h3 {
   font-size: clamp(1.5rem, 3vw, 2.4rem);
   font-weight: 200;
   position: relative;
-  top: -35px;   
-    left: -7px;   /* 👉 décale à droite */
-
+  top: -35px;
+  left: -7px;
 }
 
-/* SLIDER PLUS BAS */
 .slider {
   position: absolute;
-  top: 50%; /* ajuste ici */
+  top: 50%;
   left: 48%;
   transform: translateX(-50%);
-
   width: min(90%, 1000px);
   overflow: hidden;
-
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
@@ -97,13 +92,13 @@ body {
   object-fit: cover;
 }
 
-/* animation fluide (IMPORTANT) */
 @keyframes scroll {
   from {
-    transform: translateX(99%); 
+    transform: translateX(99%);
   }
+
   to {
-    transform: translateX(-20%); 
+    transform: translateX(-20%);
   }
 }
 
@@ -111,11 +106,10 @@ body {
   position: relative;
   z-index: 10;
   background: white;
-  margin-top: 60px;     
-  padding: 60px 0;     
-    border-top: 1px solid black; /* 👈 remet la bordure */
-  min-height: 101vh; /* 👈 remplit l’écran */
-
+  margin-top: 60px;
+  padding: 60px 0;
+  border-top: 1px solid black;
+  min-height: 101vh;
 }
 
 .menu-inner {
@@ -138,43 +132,85 @@ body {
 }
 
 .logo {
-    opacity: 0;
-    animation: fadeIn 5s forwards;
-  
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .slider {
-    opacity: 0;
-    animation: fadeIn 3s forwards;
-    animation-delay: 2s; 
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 2s;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-/* @media (min-width: 900px) {
-  .hero-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+a:focus {
+  outline: none;
+}
+
+a:active {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 
-  .menu-inner {
-    gap: 6rem;
+  .logo h1 {
+    font-size: 4rem;
   }
-} */
+
+  .logo h2 {
+    position: static;
+    margin: -8px 0;
+    margin-top: -18px;
+    font-size: 2rem;
+  }
+
+  .logo h3 {
+    position: static;
+    margin: 5px 0;
+    font-size: 2rem;
+  }
+
+  .track img {
+    width: 150px;   
+  }
+
+  .track {
+    animation: scrollMobile 16s linear infinite alternate; 
+  }
+    @keyframes scrollMobile {
+    from {
+      transform: translateX(175%);
+    }
+    to {
+      transform: translateX(-250%);
+    }
+  }
+}

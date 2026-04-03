@@ -57,7 +57,7 @@ h1 {
 .carousel-track img.active:hover {
   transform: translate(-50%, -60%);
 }
-/* IMAGE CENTRALE */
+
 .carousel-track img.active {
   left: 50%;
   transform: translate(-50%, -50%);
@@ -69,7 +69,6 @@ h1 {
               8px 8px 20px rgba(255,255,255,0.9);
 }
 
-/* GAUCHE PROCHE */
 .carousel-track img.left {
   left: 40%;
   transform: translate(-50%, -50%);
@@ -79,7 +78,6 @@ h1 {
   box-shadow: -25px 0px 30px rgba(0,0,0,0.9);
 }
 
-/* DROITE PROCHE */
 .carousel-track img.right {
   left: 60%;
   transform: translate(-50%, -50%);
@@ -89,7 +87,6 @@ h1 {
   box-shadow: 25px 0px 30px rgba(0,0,0,0.9);
 }
 
-/* GAUCHE LOINTAIN */
 .carousel-track img.left2 {
   left: 30%;
   transform: translate(-50%, -50%);
@@ -98,7 +95,6 @@ h1 {
   box-shadow: -25px 0px 30px rgba(0,0,0,0.9);
 }
 
-/* DROITE LOINTAIN */
 .carousel-track img.right2 {
   left: 70%;
   transform: translate(-50%, -50%);
@@ -106,7 +102,7 @@ h1 {
   opacity: 0.5;
   box-shadow: 25px 0px 30px rgba(0,0,0,0.9);
 }
-/* GAUCHE TRÈS LOIN */
+
 .carousel-track img.left3 {
   left: 20%;
   transform: translate(-50%, -50%);
@@ -114,14 +110,13 @@ h1 {
   opacity: 0.2;
 }
 
-/* DROITE TRÈS LOIN */
 .carousel-track img.right3 {
   left: 80%;
   transform: translate(-50%, -50%);
   height: 180px;
   opacity: 0.2;
 }
-/* FLÈCHES */
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -147,7 +142,6 @@ h1 {
   opacity: 0.3;
 }
 
-/* FULLSCREEN */
 .fullscreen {
   position: fixed;
   top: 0;
@@ -161,13 +155,11 @@ h1 {
   z-index: 9999;
 }
 
-/* IMAGE FULLSCREEN */
 .fullscreen img {
   max-width: 90vw;
   max-height: 90vh;
 }
 
-/* IMPORTANT : bloque clic seulement sur l'image */
 .fullscreen img:first-child {
   pointer-events: none;
 }
@@ -184,32 +176,27 @@ h1 {
 .close:hover{
   opacity: 0.5;
 }
-/* IMAGE CENTRALE */
+
 .carousel-track img.active {
   left: 50%;
 }
 
-/* GAUCHE PROCHE */
 .carousel-track img.left {
   left: 45%;
 }
 
-/* DROITE PROCHE */
 .carousel-track img.right {
   left: 55%;
 }
 
-/* GAUCHE LOINTAIN */
 .carousel-track img.left2 {
   left: 42%;
 }
 
-/* DROITE LOINTAIN */
 .carousel-track img.right2 {
   left: 58%;
 }
 
-/* GAUCHE TRÈS LOIN */
 .carousel-track img.left3 {
   left: 39%;
 }
@@ -252,7 +239,6 @@ h1 {
     box-shadow: none;
   }
 
-  /* désactive les classes du carousel */
   .carousel-track img.active,
   .carousel-track img.left,
   .carousel-track img.right,
@@ -265,8 +251,12 @@ h1 {
     margin: 10px 0;
   }
 
-  /* cache les flèches */
   .arrow {
     display: none;
+  }
+    .close {
+    top: -15px;
+    right: -80px;
+    width: 250px;
   }
 }

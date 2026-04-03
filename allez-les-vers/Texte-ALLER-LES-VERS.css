@@ -3,7 +3,6 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/* HEADER */
 .en-tete {
     border-bottom: 2px solid black;
     height: 70px;
@@ -14,7 +13,6 @@ body {
     margin: 20px;
 }
 
-/* CONTENU */
 section {
     max-width: 900px;
     margin: 80px auto;
@@ -31,15 +29,13 @@ h3 {
     font-weight: 200;
     margin-bottom: 0 !important;
     margin-top: 0 !important;
-    scroll-margin-top: 30px !important; 
-
+    scroll-margin-top: 30px !important;
 }
 
 h4 {
     text-align: center;
     margin-bottom: 0 !important;
     margin-top: 25px !important;
-
     font-weight: 200;
     font-size: 35px;
 }
@@ -50,9 +46,7 @@ p {
     font-size: 20px;
     font-weight: 300;
     margin-top: 30px !important;
-
 }
-
 
 span {
     font-style: italic;
@@ -73,32 +67,69 @@ a:hover {
     margin-top: 40px;
     text-align: left;
     margin: 0 !important;
-
 }
 
 .fleche-retour-photo img {
     width: 150px;
-        margin-bottom: 120px;
-
+    margin-bottom: 120px;
 }
 
-.text-democratie{
+.text-democratie {
     margin-left: 200px;
 }
 
-.texte-artic{
-        font-size: 18px;
-
+.texte-artic {
+    font-size: 18px;
 }
 
-.texte-tali{
-        font-size: 25px;
+.texte-tali {
+    font-size: 25px;
+}
 
+.texte-revanch {
+    font-size: 24px;
+    margin-left: 100px;
 }
-.texte-revanch{
-        font-size: 18px;
-margin-left: 200px;
+
+.texte-groz {
+    margin-left: 100px;
 }
-.texte-groz{
-margin-left: 100px;
+
+.texte-bris {
+    font-size: 24px;
+}
+.texte-abo {
+    font-size: 22px;
+}
+
+.texte-lux {
+    margin-top: 5px ;
+}
+
+.text-sacr {
+    margin-left: 200px;
+    line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .text-democratie,
+  .texte-revanch,
+  .texte-groz,
+  .text-sacr {
+    margin-left: 0 !important;
+  }
+
+  p,
+  .texte-artic,
+  .texte-tali,
+  .texte-revanch,
+  .texte-bris,
+  .texte-abo {
+    font-size: 20px !important;
+    line-height: 30px;
+  }
+  section {
+    margin: 40px auto;
+    padding: 16px;
+  }
 }
