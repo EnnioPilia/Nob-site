@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* HEADER */
+.header {
+    height: 77px;
+    border-bottom: 1.9px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.fleche img {
+    width: clamp(80px, 10vw, 140px);
+    margin-left: 28px;
+}
+
+.fleche:hover {
+    opacity: 0.4;
+}
+
+
+
+h1 {
+    text-align: center;
+
+    font-weight: 200;
+    font-size: clamp(40px, 5vw, 60px);
+    margin-top: 80px;
+    text-underline-offset: 20px;
+    margin-bottom: 0 !important;
+
+}
+
+h2 {
+    text-align: center;
+
+    font-weight: 200;
+    font-size: clamp(40px, 5vw, 60px);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 20px;
+    margin-top: 15px !important;
+
+}
+
+h3 {
+    text-align: center;
+
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: clamp(40px, 5vw, 55px);
+    margin-bottom: 0 !important;
+
+}
+
+h4 {
+    text-align: center;
+
+    font-weight: 200;
+    font-size: clamp(20px, 4vw, 35px);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 20px;
+    margin-top: 5px !important;
+    margin-bottom: 0 !important;
+
+}
+
+h5 {
+    text-align: center;
+
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: clamp(40px, 5vw, 55px);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 20px;
+    margin-bottom: 0 !important;
+
+}
+
+.texte {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloc {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.bloc img {
+    width: 80%;
+    max-width: 800px;
+    height: 600px;
+    object-fit: cover;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.bloc-passi img {
+    max-width: 1000px;
+    margin-bottom: -70px !important;
+    margin-top: -40px !important;
+}
+
+.bloc-brisure img {
+    margin-top: 20px !important;
+
+}
+
+.bloc-democr img {
+    margin-top: -20px !important;
+    margin-bottom: -40px !important;
+
+}
+
+.bloc a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: clamp(30px, 5vw, 5px);
+    font-weight: 200;
+}
+
+.bloc a:hover {
+    opacity: 0.5;
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: default;
+}
+
+.fullscreen-image {
+    cursor: zoom-in;
+}
+
+
+.fullscreen-container.max-zoom {
+    cursor: zoom-out;
+}
+.fullscreen-container.max-zoom .fullscreen-image {
+    cursor: zoom-out;
+}
+.fullscreen-container.space-active,
+.fullscreen-container.zoomed.space-active {
+    cursor: grab;
+}
+
+.fullscreen-container.space-active.dragging {
+    cursor: grabbing;
+}
+
+.fullscreen-container.zoomed.space-active .fullscreen-image {
+    cursor: grab;
+}
+
+.fullscreen-container.zoomed.space-active.dragging .fullscreen-image {
+    cursor: grabbing;
+}
+
+.hint {
+    position: fixed;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    pointer-events: none;
+}
+
+.fullscreen-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin-top: 1.3rem;
+}
+
+.fullscreen-close:hover {
+    opacity: 0.3;
+    transform: none;
+}
+
+.fullscreen-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.fullscreen-container,
+.fullscreen-image {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .texte {
+        padding: 20px;
+        font-size: 14px;
+    }
+}

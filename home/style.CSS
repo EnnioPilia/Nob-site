@@ -1,0 +1,180 @@
+:root {
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  border-bottom: 1px solid white;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0); 
+  transition: background 0.3s ease;
+  z-index: 5; /* 👈 plus bas */
+
+}
+
+.container {
+  width: min(90%, var(--max-width));
+  margin: auto;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 100vh; /* sécurité */
+  background: black;
+  color: white;
+  position: sticky; /* 👈 LA CLÉ */
+  top: 0;
+  z-index: 1;
+  
+}
+
+.logo {
+  position: absolute;
+  top: clamp(20px, 5vw, 80px);
+  left: clamp(20px, 5vw, 100px);
+}
+
+.logo h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 200;
+}
+
+.logo h2{
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-weight: 100;
+   position: relative;
+   font-style: italic;
+  left: 55px;   /* 👉 décale à droite */
+  top: -27px;   /* 👉 monte un peu */
+}
+.logo h3 {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 200;
+  position: relative;
+  top: -35px;   
+    left: -7px;   /* 👉 décale à droite */
+
+}
+
+/* SLIDER PLUS BAS */
+.slider {
+  position: absolute;
+  top: 50%; /* ajuste ici */
+  left: 48%;
+  transform: translateX(-50%);
+
+  width: min(90%, 1000px);
+  overflow: hidden;
+
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.track {
+  display: flex;
+  gap: 3px;
+  animation: scroll 15s linear infinite alternate;
+}
+
+.track img {
+  width: clamp(100px, 15vw, 150px);
+  height: 150px;
+  object-fit: cover;
+}
+
+/* animation fluide (IMPORTANT) */
+@keyframes scroll {
+  from {
+    transform: translateX(99%); 
+  }
+  to {
+    transform: translateX(-20%); 
+  }
+}
+
+.menu {
+  position: relative;
+  z-index: 10;
+  background: white;
+  margin-top: 60px;     
+  padding: 60px 0;     
+    border-top: 1px solid black; /* 👈 remet la bordure */
+  min-height: 101vh; /* 👈 remplit l’écran */
+
+}
+
+.menu-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.menu a {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  transition: opacity 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.3;
+}
+
+.logo {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+  
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slider {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+    animation-delay: 2s; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* @media (min-width: 900px) {
+  .hero-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .menu-inner {
+    gap: 6rem;
+  }
+} */
