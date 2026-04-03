@@ -57,6 +57,10 @@ h2 {
   margin: 50px auto;
 }
 
+.slider-container:last-of-type {
+  margin-bottom: 100px;
+}
+
 .slider img {
   position: absolute;
   top: 0;
