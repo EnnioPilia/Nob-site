@@ -109,13 +109,12 @@ body {
   margin-top: 60px;
   padding: 60px 0;
   border-top: 1px solid black;
-  min-height: 101vh;
 }
 
 .menu-inner {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -171,8 +170,20 @@ a:active {
   outline: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 1800px) and (max-width: 2000px){
+  .menu {
+    min-height: 101vh;
+    display: flex;
+    align-items: center;
+  }
 
+  .menu-inner {
+    gap: 5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
   .logo {
     position: absolute;
     top: 12%;
@@ -199,16 +210,18 @@ a:active {
   }
 
   .track img {
-    width: 150px;   
+    width: 150px;
   }
 
   .track {
-    animation: scrollMobile 16s linear infinite alternate; 
+    animation: scrollMobile 16s linear infinite alternate;
   }
-    @keyframes scrollMobile {
+
+  @keyframes scrollMobile {
     from {
       transform: translateX(175%);
     }
+
     to {
       transform: translateX(-250%);
     }

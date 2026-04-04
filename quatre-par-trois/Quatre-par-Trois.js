@@ -43,7 +43,6 @@ function closeFullscreen() {
     }
 }
 
-// INIT
 document.querySelectorAll('.slider span img').forEach(img => {
 
     img.addEventListener('click', () => openFullscreen(img));
@@ -63,7 +62,6 @@ document.querySelectorAll('.slider span img').forEach(img => {
     });
 });
 
-// ESC
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeFullscreen();
 });
