@@ -26,7 +26,12 @@ function openFullscreen(element) {
 
     const hint = document.createElement('p');
     hint.className = 'hint';
-    hint.textContent = 'Cliquez pour zoomer - Maintenez espace + clic puis glissez pour déplacer';
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        hint.style.display = "none";
+    } else {
+        hint.textContent = 'Cliquez pour zoomer - Maintenez espace + clic puis glissez pour déplacer';
+    }
 
     container.appendChild(zoomedImage);
     container.appendChild(closeButton);

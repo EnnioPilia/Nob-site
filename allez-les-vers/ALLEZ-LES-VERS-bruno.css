@@ -85,41 +85,31 @@ h5 {
 }
 
 .bloc {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
 .bloc img {
     width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.bloc-rectangle img {
+    max-height: 470px;
+}
+
+.bloc-carre img {
+    width: 50%;
     max-width: 800px;
-    height: 600px;
-    object-fit: cover;
-    object-fit: contain;
-    cursor: pointer;
+    height: auto;
 }
 
 .bloc-passi img {
-    max-width: 1000px;
-    height: 500px;
-    margin-bottom: -70px !important;
-    margin-top: 30px !important;
-}
-
-.bloc-passi a {
-    margin-top: 60px !important;
-}
-
-.bloc-revanch a {
-    margin-top: 10px !important;
-}
-
-.bloc-brisure img {
-    margin-top: 20px !important;
-}
-
-.bloc-democr img {
-    margin-top: -20px !important;
-    margin-bottom: -40px !important;
+    max-width: 900px;
 }
 
 .bloc a {
@@ -212,9 +202,8 @@ h5 {
 }
 
 .bloc img {
-    transition: transform 3s ease;
+    transition: transform 5s ease;
     border-radius: 1%;
-
 }
 
 .ligne {
@@ -231,12 +220,13 @@ h5 {
     }
 
     .header {
-        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
     }
 
     .fleche img {
-        margin-left: 20px;
-        width: 80px;
+        margin-left: 0;
     }
 
     h1,
@@ -254,19 +244,19 @@ h5 {
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 40px;
         margin-bottom: -25px !important;
         margin-top: 20px !important;
         font-weight: 200;
     }
 
     h2 {
-        
         margin-bottom: 25px !important;
+        font-size: 25px;
     }
 
     .texte {
-        max-height: 300px;
+        max-height: 245px;
         overflow-y: auto;
         padding: 20px;
         font-size: 18px;
@@ -283,18 +273,19 @@ h5 {
     .bloc img {
         width: 90%;
         height: auto;
+        padding: 20px;
     }
 
     .bloc-passi img,
-    .bloc-brisure img,
-    .bloc-democr img {
+    .bloc-rectangle img,
+    .bloc-carre img {
         margin: 0 !important;
         height: auto;
+        padding: 20px;
     }
 
     .bloc a {
         font-size: 20px;
-        margin-top: 10px;
     }
 
     .ligne {
@@ -317,7 +308,7 @@ h5 {
 
     .fullscreen-close {
         top: -5px;
-        right: -35px;
+        right: -40px;
         width: 250px;
 
     }
@@ -331,14 +322,17 @@ h5 {
         display: none;
     }
 
-      h2, h3, h4, h5 {
-    font-weight: 300;
-  }
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: 300;
+    }
 
-  p,
-  .texte,
-  .bloc a {
-    font-weight: 300; 
-  }
+    p,
+    .texte,
+    .bloc a {
+        font-weight: 300;
+    }
 
 }

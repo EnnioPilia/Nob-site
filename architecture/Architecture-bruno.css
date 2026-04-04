@@ -175,16 +175,36 @@ h2 {
 }
 
 @media (max-width: 768px) {
-
-  html,
   body {
     overflow-x: hidden;
   }
 
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .fleche img {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-top: 35px;
+    text-underline-offset: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    text-underline-offset: 10px;
+  }
+
   .close {
-    top: -10px;
-    right: -65px;
-    width: 210px;
+    width: 250px;
+    top: -15px;
+    right: -75px;
   }
 
   .fs-prev {
@@ -219,4 +239,13 @@ h2 {
     height: 100vh;
   }
 
+  .slider {
+    margin-top: -20px;
+    margin-bottom: 1px;
+  }
+
+  .divider {
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
 }
