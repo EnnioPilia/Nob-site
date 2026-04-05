@@ -208,7 +208,7 @@ h5 {
 
 .ligne {
     border-bottom: 1.9px solid black;
-    width: 600px;
+    width: 500px;
     margin: 0 auto 150px;
 }
 
@@ -267,7 +267,7 @@ h5 {
     }
 
     .bloc {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     .bloc img {

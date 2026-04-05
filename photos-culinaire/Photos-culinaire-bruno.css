@@ -219,49 +219,13 @@ h1 {
   pointer-events: auto;
 }
 
-@media screen and (max-width: 1100px) {
-  .carousel {
-    height: auto;
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .prev {
+    left: 11%;
   }
 
-  .carousel-track {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .carousel-track img {
-    position: static;
-    transform: none;
-    opacity: 1;
-    width: 90%;
-    height: auto;
-    margin: 15px 0;
-    box-shadow: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.4);
-  }
-
-  .carousel-track img.active,
-  .carousel-track img.left,
-  .carousel-track img.right,
-  .carousel-track img.left2,
-  .carousel-track img.right2,
-  .carousel-track img.left3,
-  .carousel-track img.right3 {
-    all: unset;
-    width: 90%;
-    margin: 15px 0;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.4);
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  .close {
-    top: -15px;
-    right: -80px;
-    width: 250px;
+  .next {
+    right: 11%;
   }
 }
 
