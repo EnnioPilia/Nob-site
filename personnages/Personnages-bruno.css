@@ -45,6 +45,8 @@ h1 {
   box-shadow: 4px 4px 4px rgba(100, 100, 100, 0.2);
   filter: blur(4px);
   transition: filter 0.3s ease;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .grid img:hover {
@@ -68,6 +70,8 @@ h1 {
 .fullscreen img {
   max-width: 90vw;
   max-height: 90vh;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .ligne {

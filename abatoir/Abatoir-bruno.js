@@ -11,20 +11,24 @@ function openFullscreen(element) {
     img.className = 'fullscreen-image';
     img.src = element.src;
 
+    img.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
     const close = document.createElement('img');
     close.src = '../image/croix.png';
     close.className = 'fullscreen-close';
-    close.onclick = closeFullscreen;
+
+    close.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeFullscreen();
+    });
 
     container.appendChild(img);
     container.appendChild(close);
 
     document.body.appendChild(container);
     document.body.style.overflow = 'hidden';
-
-    container.addEventListener('click', (e) => {
-        if (e.target === container) closeFullscreen();
-    });
 }
 
 function closeFullscreen() {

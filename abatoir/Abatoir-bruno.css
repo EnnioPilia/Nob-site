@@ -35,7 +35,6 @@ h1 {
   max-width: 565px;
   margin: 70px auto;
   gap: 2px;
-
   box-shadow: -4px 4px 4px rgba(100, 100, 100, 1),
     4px 4px 4px rgba(100, 100, 100, 1),
     0 4px 4px rgba(100, 100, 100, 1);
@@ -46,7 +45,10 @@ h1 {
   height: 140px;
   object-fit: cover;
   box-shadow: 4px 4px 4px rgba(100, 100, 100, 1);
+  border-radius: 2%;
   transition: 0.2s;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .portraits-grid img:hover {
@@ -74,6 +76,8 @@ h1 {
 .fullscreen-image {
   max-width: 90%;
   max-height: 90%;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .fullscreen-close {
@@ -95,15 +99,15 @@ h1 {
     overflow-x: hidden;
   }
 
-    .header {
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-    }
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
 
-    .fleche img {
-        margin-left: 0;
-    }
+  .fleche img {
+    margin-left: 0;
+  }
 
   h1 {
     font-size: 32px;

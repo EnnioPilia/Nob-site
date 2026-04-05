@@ -96,6 +96,8 @@ h5 {
     display: block;
     margin: 0 auto;
     padding: 50px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .bloc-rectangle img {

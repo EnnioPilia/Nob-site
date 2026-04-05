@@ -204,6 +204,8 @@ h1 {
     height: 100%;
     object-fit: cover;
     transition: 0.8s;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .slider span:hover img {
@@ -234,6 +236,8 @@ h1 {
 .fullscreen-image {
     max-width: 90%;
     max-height: 90%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .close {
@@ -264,6 +268,7 @@ h1 {
     .fleche img {
         margin-left: 0;
     }
+
     h1 {
         font-size: 32px;
         margin-top: 40px;

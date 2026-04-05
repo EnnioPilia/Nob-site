@@ -71,6 +71,8 @@ h2 {
   opacity: 0;
   pointer-events: none;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .slider img.active {
@@ -124,6 +126,8 @@ h2 {
 .fullscreen img.main {
   max-width: 90vw;
   max-height: 90vh;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .close {
