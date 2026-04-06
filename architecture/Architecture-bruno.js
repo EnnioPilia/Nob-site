@@ -30,9 +30,7 @@ document.querySelectorAll('.slider-container').forEach(container => {
 
 function openFullscreen(images, index) {
 
-  const imgs = [...images]; 
-
-  document.body.style.overflow = 'hidden'; 
+  const imgs = [...images];
 
   const container = document.createElement('div');
   container.className = 'fullscreen';
@@ -56,22 +54,24 @@ function openFullscreen(images, index) {
     img.src = imgs[index].src;
   }
 
-  prev.onclick = () => {
+  prev.addEventListener('click', () => {
     index = (index - 1 + imgs.length) % imgs.length;
     update();
-  };
+  });
 
-  next.onclick = () => {
+  next.addEventListener('click', () => {
     index = (index + 1) % imgs.length;
     update();
-  };
+  });
 
-  close.onclick = () => {
+  close.addEventListener('click', () => {
     container.remove();
-    document.body.style.overflow = ''; 
-  };
+    document.body.style.overflow = '';
+  });
 
   update();
   container.append(img, close, prev, next);
   document.body.appendChild(container);
+
+  document.body.style.overflow = 'hidden';
 }

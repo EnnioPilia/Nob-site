@@ -317,6 +317,7 @@ h1 {
         height: auto;
         transform: none !important;
         box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.4);
+        border-radius: 1%;
     }
 
     .slider span:hover img {

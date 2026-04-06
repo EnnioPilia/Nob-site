@@ -256,6 +256,10 @@ h1 {
   .carousel {
     height: auto;
   }
+  
+  .carousel-track img {
+    pointer-events: auto;
+  }
 
   .carousel-track {
     display: flex;
@@ -264,7 +268,14 @@ h1 {
     margin-top: -40px;
   }
 
-  .carousel-track img {
+  .carousel-track img,  
+  .carousel-track img.active,
+  .carousel-track img.left,
+  .carousel-track img.right,
+  .carousel-track img.left2,
+  .carousel-track img.right2,
+  .carousel-track img.left3,
+  .carousel-track img.right3  {
     position: static;
     transform: none;
     opacity: 1;
@@ -273,19 +284,7 @@ h1 {
     margin: 15px 0;
     box-shadow: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.4);
-  }
-
-  .carousel-track img.active,
-  .carousel-track img.left,
-  .carousel-track img.right,
-  .carousel-track img.left2,
-  .carousel-track img.right2,
-  .carousel-track img.left3,
-  .carousel-track img.right3 {
-    all: unset;
-    width: 90%;
-    margin: 15px 0;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 1%;
   }
 
   .arrow {

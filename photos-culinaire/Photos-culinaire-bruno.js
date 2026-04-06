@@ -2,12 +2,12 @@ const images = document.querySelectorAll('.carousel-track img');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-let index = 2;
+let index = 0;
 
 function update() {
-  images.forEach(img => {
-    img.classList.remove('active', 'left', 'right', 'left2', 'right2', 'left3', 'right3');
-  });
+  images.forEach(img =>
+    img.className = ''
+  );
 
   images[index].classList.add('active');
   images[(index - 1 + images.length) % images.length].classList.add('left');
@@ -18,15 +18,15 @@ function update() {
   images[(index + 3) % images.length].classList.add('right3');
 }
 
-prev.onclick = () => {
+prev.addEventListener('click', () => {
   index = (index - 1 + images.length) % images.length;
   update();
-};
+});
 
-next.onclick = () => {
+next.addEventListener('click', () => {
   index = (index + 1) % images.length;
   update();
-};
+});
 
 function openFullscreen(image) {
   const container = document.createElement('div');
@@ -35,19 +35,18 @@ function openFullscreen(image) {
   const img = document.createElement('img');
   img.src = image.src;
 
-  const closeBtn = document.createElement('img');
-  closeBtn.src = '../image/croix.png';
-  closeBtn.className = 'close';
+  const close = document.createElement('img');
+  close.src = '../image/croix.png';
+  close.className = 'close';
 
-  closeBtn.onclick = () => {
+  close.addEventListener('click', () => {
     container.remove();
     document.body.style.overflow = '';
-  };
+  });
 
-  document.body.style.overflow = 'hidden';
-
-  container.append(img, closeBtn);
+  container.append(img, close);
   document.body.appendChild(container);
+  document.body.style.overflow = 'hidden';
 }
 
 images.forEach(img => {

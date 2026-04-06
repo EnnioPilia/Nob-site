@@ -23,7 +23,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
 const images = document.querySelectorAll('.scene img');
 
 images.forEach((img) => {

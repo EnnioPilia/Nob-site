@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photos Culinaires</title>
+
   <link rel="stylesheet" href="Photos-culinaire-bruno.css">
   <script src="Photos-culinaire-bruno.js" defer></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
@@ -13,37 +16,44 @@
 
   <header class="header">
     <a href="../index.html#ancre" class="fleche">
-      <img src="../image/fleche.jpg">
+      <img src="../image/fleche.jpg" alt="Retour à l'accueil">
     </a>
   </header>
 
-  <h1>Photos Culinaires</h1>
+  <main>
 
-  <div class="carousel">
+    <section class="gallery">
+      <h1>Photos Culinaires</h1>
 
-    <button class="arrow prev">
-      <img src="../image/fleche-gauche.jpg">
-    </button>
+      <div class="carousel">
 
-    <div class="carousel-track">
-      <img src="../image/bouffe 01.jpg">
-      <img src="../image/bouffe 02.jpg">
-      <img src="../image/bouffe 03.jpg">
-      <img src="../image/bouffe 04.jpg">
-      <img src="../image/bouffe 05.jpg">
-      <img src="../image/bouffe 06.jpg">
-      <img src="../image/bouffe 07.jpg">
-      <img src="../image/bouffe 08.jpg">
-      <img src="../image/bouffe 09.jpg">
-      <img src="../image/bouffe 10.jpg">
-      <img src="../image/bouffe 11.jpg">
-    </div>
+        <button class="arrow prev" aria-label="Image précédente">
+          <img src="../image/fleche-gauche.jpg" alt="">
+        </button>
 
-    <button class="arrow next">
-      <img src="../image/fleche-droite.jpg">
-    </button>
+        <div class="carousel-track">
+          <img src="../image/bouffe 03.jpg" alt="Photo culinaire 3" loading="lazy">
+          <img src="../image/bouffe 01.jpg" alt="Photo culinaire 1" loading="lazy">
+          <img src="../image/bouffe 02.jpg" alt="Photo culinaire 2" loading="lazy">
+          <img src="../image/bouffe 04.jpg" alt="Photo culinaire 4" loading="lazy">
+          <img src="../image/bouffe 05.jpg" alt="Photo culinaire 5" loading="lazy">
+          <img src="../image/bouffe 06.jpg" alt="Photo culinaire 6" loading="lazy">
+          <img src="../image/bouffe 07.jpg" alt="Photo culinaire 7" loading="lazy">
+          <img src="../image/bouffe 08.jpg" alt="Photo culinaire 8" loading="lazy">
+          <img src="../image/bouffe 09.jpg" alt="Photo culinaire 9" loading="lazy">
+          <img src="../image/bouffe 10.jpg" alt="Photo culinaire 10" loading="lazy">
+          <img src="../image/bouffe 11.jpg" alt="Photo culinaire 11" loading="lazy">
+        </div>
 
-  </div>
+        <button class="arrow next" aria-label="Image suivante">
+          <img src="../image/fleche-droite.jpg" alt="">
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
 
 </body>
 

@@ -92,16 +92,6 @@ body {
   object-fit: cover;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(99%);
-  }
-
-  to {
-    transform: translateX(-20%);
-  }
-}
-
 .menu {
   position: relative;
   z-index: 10;
@@ -133,23 +123,22 @@ body {
 .logo {
   opacity: 0;
   animation: fadeIn 5s forwards;
-
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 .slider {
   opacity: 0;
   animation: fadeIn 3s forwards;
   animation-delay: 2s;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(99%);
+  }
+
+  to {
+    transform: translateX(-20%);
+  }
 }
 
 @keyframes fadeIn {

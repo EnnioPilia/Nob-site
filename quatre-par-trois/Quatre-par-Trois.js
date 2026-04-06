@@ -1,22 +1,24 @@
+const slider = document.querySelector('.slider');
+const images = document.querySelectorAll('.slider span img');
+
+let container = null;
 let fullscreenMode = false;
 let hoverMode = false;
-let container = null;
 
-function openFullscreen(element) {
-
+function openFullscreen(imgElement) {
     closeFullscreen();
 
     container = document.createElement('div');
     container.className = 'fullscreen-container';
-    
+
     const img = document.createElement('img');
+    img.src = imgElement.src;
     img.className = 'fullscreen-image';
-    img.src = element.src;
 
     const close = document.createElement('img');
     close.src = '../image/croix.png';
     close.className = 'close';
-    close.onclick = closeFullscreen;
+    close.addEventListener('click', closeFullscreen);
 
     container.appendChild(img);
     container.appendChild(close);
@@ -24,41 +26,37 @@ function openFullscreen(element) {
     document.body.appendChild(container);
     document.body.style.overflow = 'hidden';
 
-    document.querySelector('.slider').style.animationPlayState = 'paused';
-
+    slider.style.animationPlayState = 'paused';
     fullscreenMode = true;
 }
 
 function closeFullscreen() {
-    if (container) {
-        container.remove();
-        container = null;
-        document.body.style.overflow = '';
+    if (!container) return;
 
-        if (!hoverMode) {
-            document.querySelector('.slider').style.animationPlayState = 'running';
-        }
+    container.remove();
+    container = null;
 
-        fullscreenMode = false;
+    document.body.style.overflow = '';
+
+    if (!hoverMode) {
+        slider.style.animationPlayState = 'running';
     }
+
+    fullscreenMode = false;
 }
 
-document.querySelectorAll('.slider span img').forEach(img => {
+images.forEach(img => {
 
     img.addEventListener('click', () => openFullscreen(img));
 
     img.addEventListener('mouseenter', () => {
         hoverMode = true;
-        if (!fullscreenMode) {
-            document.querySelector('.slider').style.animationPlayState = 'paused';
-        }
+        if (!fullscreenMode) slider.style.animationPlayState = 'paused';
     });
 
     img.addEventListener('mouseleave', () => {
         hoverMode = false;
-        if (!fullscreenMode) {
-            document.querySelector('.slider').style.animationPlayState = 'running';
-        }
+        if (!fullscreenMode) slider.style.animationPlayState = 'running';
     });
 });
 
