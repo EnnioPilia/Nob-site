@@ -93,23 +93,29 @@ cd Nob-site
 index.html 
 ```
 
-Aucun build nécessaire (100% front vanilla)
-
 ---
 
 ##  Aperçu
 
 ###  Page d’accueil
-![Accueil](./image/screenshots/readme-nob.png)
+<p align="start">
+  <img src="./image/screenshots/readme-nob.png" width="700">
+</p>
 
 ###  Carrousel 3D
-![Carrousel 3D](./image/screenshots/readme-nob1.png)
+<p align="start">
+  <img src="./image/screenshots/readme-nob1.png" width="700">
+</p>
 
 ###  Mode plein écran
-![Fullscreen](./image/screenshots/readme-nob2.png)
+<p align="start">
+  <img src="./image/screenshots/readme-nob3.png" width="700">
+</p>
 
 ###  Mobile
-![Galerie](./image/screenshots/readme-nob3.png)
+<p align="start">
+  <img src="./image/screenshots/readme-nob2.png" width="250">
+</p>
 
 ---
 
@@ -126,15 +132,3 @@ Aucun build nécessaire (100% front vanilla)
 PILIA Ennio Développeur Fullstack
 
 
-
-
-
-
-
-
-
-
-
-```bash
-git clone https://github.com/ton-repo.git
-cd projet
