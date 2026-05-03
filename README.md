@@ -97,19 +97,19 @@ Aucun build nécessaire (100% front vanilla)
 
 ---
 
-## Aperçu
+##  Aperçu
 
 ###  Page d’accueil
-![Accueil](.imagevscreenshots/readme-nob.png)
+![Accueil](./image/screenshots/readme-nob.png)
 
 ###  Carrousel 3D
-![Carousel 3D](.image/screenshots/carousel-3d.png)
+![Carrousel 3D](./image/screenshots/readme-nob1.png)
 
 ###  Mode plein écran
-![Fullscreen](.image/screenshots/fullscreen.png)
+![Fullscreen](./image/screenshots/readme-nob2.png)
 
 ###  Mobile
-![Mobile](.image/screenshot/smobile.png)
+![Galerie](./image/screenshots/readme-nob3.png)
 
 ---
 
