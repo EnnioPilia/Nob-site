@@ -41,7 +41,7 @@ Demo : [nob-ruliapi-photographe.com](https://nob-ruliapi-photographe.vercel.app/
 - Déclenchement des animations en fonction du scroll
 - Transitions fluides
 
-###  Galerie interactive
+###  Galeries interactives
 - Affichage en grille avec effets visuels (blur / hover)
 - Navigation fluide entre les sections
 
