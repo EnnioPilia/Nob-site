@@ -19,7 +19,7 @@ Demo : [nob-ruliapi-photographe.com](https://nob-ruliapi-photographe.vercel.app/
 
 - **JavaScript (ES6 – Vanilla)**
 - **HTML5**
-- **CSS3** *(animations, responsive, effets visuels)*
+- **CSS3**
 - **Intersection Observer API**
 - **Local optimizations (images, rendering)**
 
