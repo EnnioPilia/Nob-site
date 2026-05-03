@@ -159,6 +159,37 @@ a:active {
   outline: none;
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 10px;       
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator img {
+  width: 40px;
+  opacity: 0.7;
+  animation: scrollBounce 1.5s infinite;
+}
+
+@keyframes scrollBounce {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, 10px); }
+  100% { transform: translate(-50%, 0); }
+}
+
+.scroll-indicator {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 2.5s; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 1800px) and (max-width: 2000px){
   .menu {
     min-height: 101vh;
