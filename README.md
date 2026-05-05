@@ -49,7 +49,6 @@ Demo : [nob-ruliapi-photographe.com](https://nob-ruliapi-photographe.vercel.app/
 - Ouverture des images en fullscreen
 - Zoom interactif (clic)
 - Déplacement de l’image (drag + espace)
-- Fermeture via bouton ou touche `ESC`
 
 ###  Responsive design
 - Mobile / tablette / desktop
