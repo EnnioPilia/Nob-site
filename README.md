@@ -1,6 +1,6 @@
 #  Site vitrine – Photographe
 
-Site web développé pour un photographe professionnel à la retraite, mettant en valeur une rétrospective de son travail à travers une expérience visuelle immersive (projet personnel) .
+Site web développé pour un photographe professionnel à la retraite, mettant en valeur une rétrospective de son travail à travers une expérience visuelle immersive (projet personnel).
 
 Demo : [nob-ruliapi-photographe.com](https://nob-ruliapi-photographe.vercel.app/)
 
